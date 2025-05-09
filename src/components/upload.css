@@ -1,0 +1,168 @@
+/* Upload.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .upload-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .upload-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .upload-input {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  
+  .file-name {
+    margin: 0.5rem 0;
+    color: #555;
+  }
+  
+  .upload-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .deselect-button {
+    background-color:rgb(197, 48, 11);
+    color: #fff;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .upload-button:hover {
+    background-color: #45a049;
+  }
+
+  .download-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color:rgb(57, 46, 212); /* Green background */
+    color: white; /* White text */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-button:hover {
+    background-color:rgb(13, 67, 182); /* Darker green on hover */
+  }
+
+  .dropzone {
+    border: 2px dashed #cccccc;
+    border-radius: 12px;
+    padding: 2rem;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    margin-bottom: 1rem;
+  }
+  
+  .dropzone:hover {
+    border-color: #4caf50;
+  }
+
+  .upload-icon {
+    font-size: 3rem;
+    color: #cccccc;
+    margin-bottom: 1rem;
+  }
+
+  .upload-icon:hover {
+    color: #4caf50;
+  }
+
+  .loading-text {
+    text-align: center;
+    color: #666;
+    margin: 10px 0;
+  }
+
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    margin: 15px auto;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .success-message {
+    color: #4caf50;
+    margin: 15px 0;
+    font-weight: 500;
+  }
+
+  .new-upload-button {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .new-upload-button:hover {
+    background-color: #45a049;
+  }
